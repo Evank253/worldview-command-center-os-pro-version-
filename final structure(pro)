@@ -2,8 +2,8 @@
  ├── index.html
  ├── styles.css
  ├── app.js
- ├── config.js
  ├── modules/
+ ├── config.js
  │    ├── finance.js
  │    ├── global.js
  │    ├── ai.js
