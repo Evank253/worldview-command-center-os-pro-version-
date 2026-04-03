@@ -1,0 +1,12 @@
+async function renderFinance() {
+  const res = await fetch(CONFIG.CRYPTO_API);
+  const data = await res.json();
+
+  return `
+    <div class="card">
+      <h2>💰 Live Crypto Market</h2>
+      <p>BTC: $${data.bitcoin.usd}</p>
+      <p>ETH: $${data.ethereum.usd}</p>
+    </div>
+  `;
+}
