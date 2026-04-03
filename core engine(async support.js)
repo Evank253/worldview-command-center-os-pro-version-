@@ -1,0 +1,9 @@
+async function loadModule() {
+  const app = document.getElementById("app");
+
+  if (currentMode === "finance") app.innerHTML = await renderFinance();
+  if (currentMode === "global") app.innerHTML = await renderGlobal();
+  if (currentMode === "ai") app.innerHTML = renderAI();
+  if (currentMode === "business") app.innerHTML = renderBusiness();
+  if (currentMode === "cyber") app.innerHTML = renderCyber();
+}
