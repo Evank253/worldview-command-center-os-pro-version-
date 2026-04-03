@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.tabs button {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+  background: #2563eb;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
